@@ -1,0 +1,16 @@
+body {
+  font-family: 'Helvetica', sans-serif;
+}
+#page-wrap {
+  width: 960px;
+  margin: 0 auto;
+}
+
+article {
+  width: 90%;
+}
+
+footer * {
+  text-align: right;
+  list-style: none;
+}

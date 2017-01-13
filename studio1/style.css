@@ -1,0 +1,21 @@
+body {
+  font-family: 'Helvetica', sans-serif;
+}
+#page-wrap {
+  width: 960px;
+  margin: 0 auto;
+}
+
+
+.column {
+  float: left;
+}
+
+footer {
+  clear: both;
+}
+
+footer * {
+  text-align: right;
+  list-style: none;
+}
