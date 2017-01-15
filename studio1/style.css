@@ -1,21 +1,72 @@
-body {
-  font-family: 'Helvetica', sans-serif;
-}
-#page-wrap {
-  width: 960px;
-  margin: 0 auto;
+/* basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
 }
 
+#page-wrap {
+    margin: 0 auto;
+    padding: 20px;
+    width: 800px;
+}
+
+#page-title {
+    margin: 0 0 10px 0;
+}
+
+    #page-title * {
+        background: #222;
+        color: #fff;
+        /* display: table to keep inline-block bg width and block stacking */
+        display: table;
+    }
+    
+#banner {
+    height: 250px;
+    width: 800px;
+}
+
+/*%%%%%% Main Content %%%%%*/
+main {
+    float: left;
+    margin-top: 40px;
+}
 
 .column {
-  float: left;
+    float: left;
+    width: 260px;
+    margin-right: 10px;
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+ul, ol {
+    list-style: none;
 }
 
 footer {
-  clear: both;
+    clear: both;
+    height: 100px;
+    background: #eee;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
 }
 
-footer * {
-  text-align: right;
-  list-style: none;
+#footer-inner {
+    background: #fff;
+    text-align: right;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#footer-inner ul li {
+    
 }
