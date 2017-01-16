@@ -1,3 +1,4 @@
+/*%%%%%% Global CSS %%%%%*/
 /* basic reset */
 * {
     margin: 0;
@@ -5,23 +6,47 @@
     font-family: 'Helvetica', sans-serif;
 }
 
-#page-wrap {
-    margin: 0 auto;
-    padding: 20px;
-    width: 800px;
+body {
+    background-color: #fcfbf4;
+}
+
+#stripe {
+    height: 10px;
+    background: #333;
+}
+
+ul, ol {
+    list-style: none;
 }
 
 #page-title {
-    margin: 0 0 10px 0;
+    background: #fff;
+    border-bottom: 1px solid #333;
+    height: 90px;
+    margin-bottom: 0;
+    padding-top: 10px;
 }
 
-    #page-title * {
-        background: #222;
-        color: #fff;
+    #page-title h1, #page-title h2 {
+        background: #fff;
+        color: #333;
         /* display: table to keep inline-block bg width and block stacking */
         display: table;
     }
-    
+
+#page-title-inner {
+    background: #fff;
+    height: 90px;
+    display: inline-block;
+    padding: 10px;
+}
+
+#page-wrap {
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    width: 800px;
+}
+
 #banner {
     height: 250px;
     width: 800px;
@@ -30,7 +55,7 @@
 /*%%%%%% Main Content %%%%%*/
 main {
     float: left;
-    margin-top: 40px;
+    margin-top: 150px;
 }
 
 .column {
@@ -38,19 +63,41 @@ main {
     width: 260px;
     margin-right: 10px;
 }
+.column * {
+    text-align: center;
+}
+
+.column h2 {
+    color: #333;
+    position: absolute;
+    text-align: left;
+    top: 500px;
+    transform: rotate(-45deg);
+    transform-origin: top left;
+}
 
 .column:last-child {
     margin-right: 0;
 }
 
-ul, ol {
-    list-style: none;
+nav li {
+    border: 1px solid #333;
+    margin-bottom: 6px;
+}
+
+nav li a {
+    color: #333;
+    display: block;
+    font-variant: small-caps;
+    padding: 13px;
+    text-decoration: none;
+    text-transform: lowercase;
 }
 
 footer {
     clear: both;
     height: 100px;
-    background: #eee;
+    background: #fff;
     position: fixed;
     bottom: 0;
     right: 0;
@@ -58,15 +105,19 @@ footer {
 }
 
 #footer-inner {
-    background: #fff;
-    text-align: right;
+    background: #333;
+    text-align: left;
     width: 100px;
-    height: 100px;
+    height: 90px;
+    padding: 10px 0 0 10px;
     position: fixed;
     bottom: 0;
     right: 0;
 }
 
-#footer-inner ul li {
-    
+#footer-inner ul li a {
+    color: #fff;
+    font-variant: small-caps;
+    text-decoration: none;
+    text-transform: lowercase;
 }

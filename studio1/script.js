@@ -11,7 +11,7 @@ function setup() {
 
 function draw() {
     if (mouseIsPressed) {
-        fill(0);
+        fill('#333');
     } else {
         fill(255);
     }
