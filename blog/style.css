@@ -105,6 +105,10 @@ main {
         margin-bottom: 100px;
     }
 
+    .post-content a {
+        color: #96200c;
+    }
+
 aside, figure, figcaption {
     display: inline-block;
     text-align: center;
