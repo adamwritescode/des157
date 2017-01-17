@@ -20,26 +20,17 @@ ul, ol {
 }
 
 #page-title {
-    background: #fff;
-    border-bottom: 1px solid #333;
-    height: 90px;
+    background: #fcfbf4;
+    border-bottom: 2px solid #333;
+    height: 80px;
     margin-bottom: 0;
     padding-top: 10px;
 }
 
     #page-title h1, #page-title h2 {
-        background: #fff;
+        background: #fcfbf4;
         color: #333;
-        /* display: table to keep inline-block bg width and block stacking */
-        display: table;
     }
-
-#page-title-inner {
-    background: #fff;
-    height: 90px;
-    display: inline-block;
-    padding: 10px;
-}
 
 #page-wrap {
     margin: 0 auto;
@@ -55,7 +46,7 @@ ul, ol {
 /*%%%%%% Main Content %%%%%*/
 main {
     float: left;
-    margin-top: 150px;
+    margin-top: 160px;
 }
 
 .column {
@@ -68,12 +59,14 @@ main {
 }
 
 .column h2 {
+    border-bottom: 2px solid #333;
     color: #333;
     position: absolute;
     text-align: left;
-    top: 500px;
+    top: 491px;
     transform: rotate(-45deg);
     transform-origin: top left;
+    width: 180px;
 }
 
 .column:last-child {
@@ -92,6 +85,12 @@ nav li a {
     padding: 13px;
     text-decoration: none;
     text-transform: lowercase;
+}
+
+nav li a:hover {
+    /* background: #c12a0f; */
+    background: #96200c;
+    color: #fcfbf4;
 }
 
 footer {
