@@ -6,19 +6,15 @@
     font-family: 'Helvetica', sans-serif;
 }
 
+/* everything else */
 body {
     background-color: #fcfbf4;
+    border-top: 10px solid #333;
 }
 
 ul, ol {
     list-style: none;
 }
-
-#stripe {
-    height: 10px;
-    background: #333;
-}
-
 
 #page-title {
     background: #fcfbf4;
@@ -136,7 +132,7 @@ footer {
     text-align: left;
     width: 100px;
     height: 90px;
-    padding: 10px 0 0 10px;
+    padding: 5px 0 0 5px;
     position: fixed;
     bottom: 0;
     right: 0;
