@@ -1,0 +1,118 @@
+/*%%%%%% Global CSS %%%%%*/
+/* basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+}
+
+body {
+    background-color: #fcfbf4;
+    border-top: 10px solid #333;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+#page-title {
+    background: #fcfbf4;
+    border-bottom: 2px solid #333;
+    height: 80px;
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+
+    #page-title h1, #page-title h2 {
+        background: #fcfbf4;
+        color: #333;
+    }
+
+#page-wrap {
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    width: 800px;
+}
+
+#banner {
+    height: 250px;
+    width: 800px;
+}
+
+/*%%%%%% Main Content %%%%%*/
+main {
+    float: left;
+    margin-top: 160px;
+}
+
+.column {
+    float: left;
+    width: 260px;
+    margin-right: 10px;
+}
+.column * {
+    text-align: center;
+}
+
+.column h2 {
+    border-bottom: 2px solid #333;
+    color: #333;
+    position: absolute;
+    text-align: left;
+    top: 491px;
+    transform: rotate(-45deg);
+    transform-origin: top left;
+    width: 180px;
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+nav li {
+    border: 1px solid #333;
+    margin-bottom: 6px;
+}
+
+nav li a {
+    color: #333;
+    display: block;
+    font-variant: small-caps;
+    padding: 13px;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+nav li a:hover {
+    /* background: #c12a0f; */
+    background: #96200c;
+    color: #fcfbf4;
+}
+
+footer {
+    clear: both;
+    height: 60px;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+#footer-inner {
+    background: #333;
+    text-align: left;
+    width: 100px;
+    height: 60px;
+    padding: 0 0 0 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#footer-inner ul li a {
+    color: #fff;
+    font-variant: small-caps;
+    text-decoration: none;
+    text-transform: lowercase;
+}
