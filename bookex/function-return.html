@@ -1,0 +1,47 @@
+<!--NOTE: Replace all of the uppercase text from glenda with your own custom content-->
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Function Return demo</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px
+        }
+
+        body {
+            font-family: Helvetica, Geneva, sans-serif;
+            color: white;
+            background-color: #333;
+            font-size: 11px;
+            margin: 24px;
+        }
+
+        h1 {
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Function Return demo</h1>
+    <h2>open the console to see the results of the script</h2>
+    <script>
+        // Create a function called addNums() that accepts two numbers.
+        function addNums(num1, num2){
+          // Create a variable to hold a sum (num1 + num2)
+          var sum = num1 + num2;
+          // return the sum of num1 + num2.
+          return sum;
+        }
+
+        var add1_2 = addNums(1,2);
+        //Print sum to console
+        console.log("The value of add1_2 = " + add1_2);
+        var add3_4 = addNums(3,4);
+        //Print second sum to console
+        console.log("The value of add3_4 = " + add3_4);
+    </script>
+</body>
