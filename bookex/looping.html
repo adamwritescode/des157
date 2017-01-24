@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>looping and looping and looping and looping and....</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px
+        }
+
+        body {
+            font-family: Helvetica, Geneva, sans-serif;
+            color: white;
+            background-color: #333;
+            font-size: 11px;
+            margin: 24px;
+        }
+
+        h1 {
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ch. 2: Looping a Triangle</h1>
+    <h2>open the console to see the results of the script</h2>
+    <script>
+        /* Create a triangle of # chars. Start with initialized string
+           variable "#", print it, and then concatenate another "#" char to it.
+           Wash/rinse/repeat 7 times via for loop. Line breaks are added by
+           default with every console.log() call */
+
+        var output = "#";
+        for (var i = 0; i < 7; i++){
+          console.log(output);
+          output += "#";
+        }
+    </script>
+</body>
