@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Function Return demo - min(num1, num2)</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px
+        }
+
+        body {
+            font-family: Helvetica, Geneva, sans-serif;
+            color: white;
+            background-color: #333;
+            font-size: 11px;
+            margin: 24px;
+        }
+
+        h1 {
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Function Return demo</h1>
+    <h2>open the console to see the results of the script</h2>
+    <script>
+        // Create a function called min() that accepts two numbers.
+        function min(num1, num2){
+          // some input validation... checks to see if num1 and num2 are
+          // not not numbers (i.e. if they are numbers)
+          if (!isNaN(num1) && !isNaN(num2)){
+            if (num1 < num2){
+              return num1;
+            }
+            else if (num1 > num2){
+              return num2;
+            }
+            else {
+              // same number
+              console.log("same #")
+              return;
+            }
+          }
+        }
+
+        // stores return value of min(3,5);
+        var min_3_5 = min(3,5);
+        // Print minimum to console
+        console.log("The minimum of 3 and 5 is " + min_3_5);
+
+        // stores return value of min(3,5);
+        var min_10_7 = min(10,7);
+        //Print minimum to console
+        console.log("The minimum of 10 and 7 is " + min_10_7);
+    </script>
+</body>
