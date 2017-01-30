@@ -10,7 +10,7 @@ As demon [animal + s] storm our shore
 Sounds of battle [instrument + s] are in the air
 Hear the dragon-[animal + s] roar!
 
-[Building + s] crumble, [type of warrior + s] clash
+[Building + s] crumble, [type of fighter + s] clash
 [metal] and [building material] collide
 And when the dust of war settles
 Upon winged [animals] we shall ride!

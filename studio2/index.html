@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>DOMContentLoaded template</title>
+    <title>|m| METAL LIBS |m|</title>
     <link href="style.css" rel="stylesheet"/>
     <script src="script.js" type="text/javascript"></script>
 </head>
@@ -14,15 +14,167 @@
   </header>
   <nav>
     <ul>
-      <li><a href="#">Power Metal</a></li>
-      <li><a href="#">Death Metal</a></li>
-      <li><a href="#">Black Metal</a></li>
-      <li><a href="#">Hardcore</a></li>
+      <li><a href="#power">Power Metal</a></li>
+      <li><a href="#death">Death Metal</a></li>
+      <li><a href="#black">Black Metal</a></li>
+      <li><a href="#hardcore">Hardcore</a></li>
     </ul>
   </nav>
   <section>
-    <form>
-    </form>
+    <article>
+      <form name="power" id="power">
+        <div>
+          <label>Time of day (e.g. "night")</label>
+          <input type="text" name="timeOfDay0">
+        </div>
+        <div>
+          <label>Time of day (e.g. "night")</label>
+          <input type="text" name="timeOfDay1">
+        </div>
+        <div>
+          <label>Planet name</label>
+          <input type="text" name="planet0">
+        </div>
+        <div>
+          <label>Mythological creature (plural)</label>
+          <input type="text" name="mythCreature0">
+        </div>
+        <div>
+          <label>Medieval weaponry (plural)</label>
+          <input type="text" name="medievalWeapon0">
+        </div>
+        <div>
+          <label>Medieval weaponry (plural)</label>
+          <input type="text" name="medievalWeapon1">
+        </div>
+        <div>
+          <label>Animal (plural)</label>
+          <input type="text" name="animal0">
+        </div>
+        <div>
+          <label>Instrument (plural)</label>
+          <input type="text" name="instrument0">
+        </div>
+        <div>
+          <label>Animal (plural)</label>
+          <input type="text" name="animal1">
+        </div>
+        <div>
+          <label>Type of building (plural - e.g. "houses")</label>
+          <input type="text" name="building0">
+        </div>
+        <div>
+          <label>Type of fighter (plural - e.g. "warrior")</label>
+          <input type="text" name="fighter0">
+        </div>
+        <div>
+          <label>Building material (e.g. "wood")</label>
+          <input type="text" name="buildingMaterial0">
+        </div>
+        <div>
+          <label>Building material (e.g. "wood")</label>
+          <input type="text" name="buildingMaterial1">
+        </div>
+        <div>
+          <label>Animal (plural)</label>
+          <input type="text" name="animal2">
+        </div>
+        <!-- submit and reset buttons -->
+        <div>
+          <button>SHRED!</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+
+      <!-- Mad Libs results go below. Hidden by default until form is completed -->
+      <section class="results">
+        <p>
+          The <span id="power-timeOfDay0"></span> is gone, the <span id="power-timeOfDay1"></span> has come
+          <br><span id="power-planet0"></span> shines brightly in the sky
+          <br>The time for war has begun
+          <br>The ancient <span id="power-mythCreature0"></span> fly high
+        </p>
+        <p>
+          We draw our <span id="power-medievalWeapon0"></span> and <span id="power-medievalWeapon1"></span>
+          <br>As demon <span id="power-animal0"></span> storm our shore
+          <br>Sounds of battle <span id="power-instrument0"></span> are in the air
+          <br>Hear the dragon-<span id="power-animal1"></span> roar!
+        </p>
+        <p>
+          <span id="power-building0"></span> crumble, <span id="power-fighter0"></span> clash
+          <br><span id="power-buildingMaterial0"></span> and <span id="power-buildingMaterial1"></span> collide
+          <br>And when the dust of war settles
+          <br>Upon winged <span id="power-animal2"></span> we shall ride!
+        </p>
+      </section>
+    </article>
+
+    <!-- Next form goes here -->
+    <article>
+      <form name="death" id="death">
+        <div>
+          <label>Type of affliction (e.g. "insanity")</label>
+          <input type="text" name="affliction0">
+        </div>
+        <div>
+          <label>Noun</label>
+          <input type="text" name="noun0">
+        </div>
+        <div>
+          <label>Noun</label>
+          <input type="text" name="noun1">
+        </div>
+        <div>
+          <label>Noun</label>
+          <input type="text" name="noun2">
+        </div>
+        <div>
+          <label>Noun ending with -ion</label>
+          <input type="text" name="nounIon0">
+        </div>
+        <div>
+          <label>Verb</label>
+          <input type="text" name="verb0">
+        </div>
+        <div>
+          <label>Noun</label>
+          <input type="text" name="noun3">
+        </div>
+        <div>
+          <label>Noun ending with -ion</label>
+          <input type="text" name="nounIon1">
+        </div>
+        <!-- submit and reset buttons -->
+        <div>
+          <button>GET BRUTAL</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+
+      <!-- Mad Libs results go below. Hidden by default until form is completed -->
+      <section class="results">
+        <p>
+          <span id="death-affliction0"></span> will spread and cover the world
+          <br>Mass insanity, the end of our time
+          <br>Scavengers will eat the remains of <span id="death-noun0"></span>
+          <br>Our extinction was by our design
+        </p>
+        <p>
+          Beg for your life, you won't escape the <span id="death-noun1"></span>
+          <br>Your fate was sealed today
+          <br>Disease has spread you pray for <span id="death-noun2"></span>
+          <br><span id="death-nounIon0"></span> plague
+        </p>
+        <p>
+          Driven to <span id="death-verb0"></span>, this is not my will
+          <br>I am compelled to slay
+          <br>Invisible <span id="death-noun3"></span> takes control
+          <br><span id="death-nounIon1"></span> plague
+        </p>
+      </section>
+    </article>
   </section>
+  <footer>
+  </footer>
 </body>
 </html>
