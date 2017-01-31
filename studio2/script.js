@@ -62,29 +62,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // -- Hardcore submit
     hardcore.getElementsByTagName('button')[0].addEventListener('click', processHardcore, false);
 
-
-    // define processForm() - form parsing/population to run on submit
-    function processForm(genre) {
-      // Power Metal
-      if (genre == 'power'){
-        processPowerMetal();
-      }
-      // Death Metal
-      else if (genre == 'death'){
-        processDeathMetal();
-      }
-      // Black Metal
-      else if (genre == 'black'){
-        processBlackMetal();
-      }
-      // Hardcore
-      else {
-        processHardcore();
-      }
-
-      return false;
-    }
-
     // Modular Function Definitions (to process each form):
     // For each form (Power Metal, Death Metal, Black Metal, Hardcore), store
     // the values of each field in one array, and store the corresponding
