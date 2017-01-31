@@ -49,18 +49,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // -- Hardcore form
     var hardcore = document.hardcore;
 
-    // call processForm() [defined below] on submit (for each form)
+    // call processForm() [defined below] on click (for each form)
     // -- Power Metal submit
-    powerMetal.onsubmit = processForm('power');
+    powerMetal.getElementsByTagName('button')[0].addEventListener('click', processPowerMetal, false);
 
     // -- Death Metal submit
-    deathMetal.onsubmit = processForm('death');
+    deathMetal.getElementsByTagName('button')[0].addEventListener('click', processDeathMetal, false);
 
     // -- Black Metal submit
-    blackMetal.onsubmit = processForm('black');
+    blackMetal.getElementsByTagName('button')[0].addEventListener('click', processBlackMetal, false);
 
     // -- Hardcore submit
-    hardcore.onsubmit = processForm('hard');
+    hardcore.getElementsByTagName('button')[0].addEventListener('click', processHardcore, false);
 
 
     // define processForm() - form parsing/population to run on submit
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         powerMetalSpans[i].innerHTML = powerMetalFields[i].value;
       }
 
-      // -- show results and hide form?
+      // -- show results and hide form
       powerMetalResults.className = "results active";
       // powerMetal.className = "hidden";
 
@@ -123,6 +123,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
       for (var i = 0; i < deathMetalFields.length; i++){
         deathMetalSpans[i].innerHTML = deathMetalFields[i].value;
       }
+
+      // -- show results and hide form
+      deathMetalResults.className = "results active";
+      // deathMetal.className = "hidden";
+
       return false;
     }
 
@@ -138,6 +143,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
       for (var i = 0; i < blackMetalFields.length; i++){
         blackMetalSpans[i].innerHTML = blackMetalFields[i].value;
       }
+
+      // -- show results and hide form
+      blackMetalResults.className = "results active";
+      // blackMetal.className = "hidden";
+
       return false;
     }
 
@@ -153,6 +163,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
       for (var i = 0; i < hardcoreFields.length; i++){
         hardcoreSpans[i].innerHTML = hardcoreFields[i].value;
       }
+
+      // -- show results and hide form
+      hardcoreResults.className = "results active";
+      // hardcore.className = "hidden";
+
       return false;
     }
 

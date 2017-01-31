@@ -10,6 +10,15 @@
     font-family: 'Helvetica', sans-serif;
 }
 
+body {
+  background-color: white;
+}
+
+a {
+  color: darkred;
+}
+
+
 /* DEFAULT BEHAVIOR */
 .hidden {
   /* visibility: hidden; */
@@ -22,9 +31,20 @@
   display: block;
 }
 
+/* STRUCTURAL CSS */
+
+header, nav, section, footer {
+  padding-left: 10px;
+}
+
 header h1 {
+  color: darkred;
   font-size: 38px;
   text-transform: uppercase;
+}
+
+nav {
+  margin-bottom: 10px;
 }
 
 nav ul li {
@@ -39,4 +59,12 @@ body > section{
 label {
   display: inline-block;
   width: 300px;
+}
+
+label, input {
+  margin-bottom: 20px;
+}
+
+footer {
+  margin-top: 10px;
 }
