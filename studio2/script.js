@@ -3,6 +3,18 @@
 document.addEventListener("DOMContentLoaded", function(event) {
     console.log("DOM fully loaded and parsed");
 
+    // First, hide just about everything, so that users are only presented with
+    // header, footer, nav, etc (everything but the forms/empty result sections)
+    // Do this by creating array of all article tags
+    var articleTags = document.getElementsByTagName("article");
+
+    // loop through each article tag in array and append the class .hidden
+    for (var i = 0; i < articleTags.length; i++){
+      articleTags[i].className += "hidden";
+    }
+
+
+
     // Declare & initialize form name variables:
     // -- Power Metal form
     var powerMetal = document.power;
@@ -16,7 +28,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // -- Hardcore form
     var hardcore = document.hardcore;
 
-    // call processForm() when submit buttons are clicked (for each form)
+
+    // call processForm() [defined below] on submit (for each form)
     // -- Power Metal submit
     powerMetal.onsubmit = processForm;
 
@@ -29,7 +42,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // -- Hardcore submit
     hardcore.onsubmit = processForm;
 
-    // define processForm() - data parsing/population/validation
+
+    // define processForm() - form parsing/population to run on submit
     function processForm() {
 
       // Power Metal
@@ -97,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }
       return false;
     }
-    
+
     // Process Hardcore form
     function processHardcore(){
       // -- collect all <input> tags from the relevant form
@@ -112,6 +126,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }
       return false;
     }
-
 
 });

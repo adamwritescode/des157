@@ -2,13 +2,29 @@
 
 /* CSS Document */
 
-/* start all css with a reset */
+/* BASIC RESET */
 
 * {
     margin: 0px;
     padding: 0px;
     font-family: 'Helvetica', sans-serif;
 }
+
+/* DEFAULT BEHAVIOR */
+.hidden {
+  visibility: hidden;
+}
+
+/* TOGGLED BEHAVIOR */
+.active {
+  visibility: visible;
+}
+
+body > section{
+  min-height: 500px;
+  border: 1px solid #ccc;
+}
+
 
 
 label {
