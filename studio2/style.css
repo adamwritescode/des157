@@ -62,7 +62,13 @@ label {
 }
 
 label, input {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+section.results {
+  color: darkred;
+  margin: 20px 0;
+  line-height: 20px;
 }
 
 footer {
