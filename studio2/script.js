@@ -5,17 +5,63 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     // First, hide just about everything, so that users are only presented with
     // header, footer, nav, etc (everything but the forms/empty result sections)
-    // Do this by creating array of all article tags
+    // -- Do this by creating array of all article tags
+    // -- AND array of corresponding section tags  (w/ 'results' class)
     var articleTags = document.getElementsByTagName("article");
+    var results = document.getElementsByClassName("results");
 
-    // loop through each article tag in array and append the class .hidden
+
+    var powerMetalResults = results[0];
+    var deathMetalResults = results[1];
+    var blackMetalResults = results[2];
+    var hardcoreResults = results[3];
+
+    // -- loop through each article and section tag in arrays and append
+    // the class(es) 'hidden' and 'results hidden', respectively.
     for (var i = 0; i < articleTags.length; i++){
       articleTags[i].className += "hidden";
+      results[i].className = "results hidden";
+    }
+
+    // Create variables to hold nav links (for selecting desired form)
+    var navPowerMetal = document.getElementById("navPowerMetal");
+    var navDeathMetal = document.getElementById("navDeathMetal");
+    var navBlackMetal = document.getElementById("navBlackMetal");
+    var navHardcore = document.getElementById("navHardcore");
+
+    // Now add toggle behavior to nav links... add the other 3
+    navPowerMetal.addEventListener("click", showPowerMetal, false);
+    navDeathMetal.addEventListener("click", showDeathMetal, false);
+
+    // showPowerMetal() definition -- TO BE PLACED AT BOTTOM
+    function showPowerMetal(){
+      // show the Power Metal form
+      articleTags[0].className = "active";
+      powerMetal.className="active";
+      for (var i = 1; i < 4; i++){
+        articleTags[i].className = "hidden";
+      }
+
+      powerMetalResults.className = "results hidden";
+
+      return false;
+    }
+
+    // showDeathMetal() definition -- TO BE PLACED AT BOTTOM
+    function showDeathMetal(){
+      // show the Power Metal form... finish this
+      articleTags[1].className = "active";
+      for (var i = 0; i < 3; i++){
+        if (i != 1){
+          articleTags[i].className = "hidden";
+        }
+        // else, do nothing
+      }
+      return false;
     }
 
 
-
-    // Declare & initialize form name variables:
+    // FORMS: Declare & initialize form name variables:
     // -- Power Metal form
     var powerMetal = document.power;
 
@@ -28,35 +74,38 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // -- Hardcore form
     var hardcore = document.hardcore;
 
-
     // call processForm() [defined below] on submit (for each form)
     // -- Power Metal submit
-    powerMetal.onsubmit = processForm;
+    powerMetal.onsubmit = processForm('power');
 
     // -- Death Metal submit
-    deathMetal.onsubmit = processForm;
+    deathMetal.onsubmit = processForm('death');
 
     // -- Black Metal submit
-    blackMetal.onsubmit = processForm;
+    blackMetal.onsubmit = processForm('black');
 
     // -- Hardcore submit
-    hardcore.onsubmit = processForm;
+    hardcore.onsubmit = processForm('hard');
 
 
     // define processForm() - form parsing/population to run on submit
-    function processForm() {
-
+    function processForm(genre) {
       // Power Metal
-      processPowerMetal();
-
+      if (genre == 'power'){
+        processPowerMetal();
+      }
       // Death Metal
-      processDeathMetal();
-
+      else if (genre == 'death'){
+        processDeathMetal();
+      }
       // Black Metal
-      processBlackMetal();
-
+      else if (genre == 'black'){
+        processBlackMetal();
+      }
       // Hardcore
-      processHardcore();
+      else {
+        processHardcore();
+      }
 
       return false;
     }
@@ -79,6 +128,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
       for (var i = 0; i < powerMetalFields.length; i++){
         powerMetalSpans[i].innerHTML = powerMetalFields[i].value;
       }
+
+      // -- show results and hide form?
+      powerMetalResults.className = "results active";
+      powerMetal.className = "hidden";
+
       return false;
     }
 

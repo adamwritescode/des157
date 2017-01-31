@@ -12,12 +12,14 @@
 
 /* DEFAULT BEHAVIOR */
 .hidden {
-  visibility: hidden;
+  /* visibility: hidden; */
+  display: none;
 }
 
 /* TOGGLED BEHAVIOR */
 .active {
-  visibility: visible;
+  /* visibility: visible; */
+  display: block;
 }
 
 body > section{
