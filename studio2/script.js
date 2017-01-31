@@ -189,7 +189,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     function showDeathMetal(){
       // show the Power Metal form... finish this
       articleTags[1].className = "active";
-      for (var i = 0; i < 3; i++){
+      for (var i = 0; i < 4; i++){
         if (i != 1){
           articleTags[i].className = "hidden";
         }
@@ -202,7 +202,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     function showBlackMetal(){
       // show the Power Metal form... finish this
       articleTags[2].className = "active";
-      for (var i = 0; i < 3; i++){
+      for (var i = 0; i < 4; i++){
         if (i != 2){
           articleTags[i].className = "hidden";
         }
@@ -215,7 +215,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     function showHardcore(){
       // show the Power Metal form... finish this
       articleTags[3].className = "active";
-      for (var i = 0; i < 3; i++){
+      for (var i = 0; i < 4; i++){
         if (i != 3){
           articleTags[i].className = "hidden";
         }
