@@ -52,6 +52,7 @@ nav ul li {
 }
 
 body > section{
+  padding-top: 20px;
   min-height: 500px;
   border: 1px solid #ccc;
 }
@@ -69,6 +70,10 @@ section.results {
   color: darkred;
   margin: 20px 0;
   line-height: 20px;
+}
+
+.results span {
+  font-weight: bold;
 }
 
 footer {
