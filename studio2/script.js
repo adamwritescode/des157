@@ -32,33 +32,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // Now add toggle behavior to nav links... add the other 3
     navPowerMetal.addEventListener("click", showPowerMetal, false);
     navDeathMetal.addEventListener("click", showDeathMetal, false);
-
-    // showPowerMetal() definition -- TO BE PLACED AT BOTTOM
-    function showPowerMetal(){
-      // show the Power Metal form
-      articleTags[0].className = "active";
-      powerMetal.className="active";
-      for (var i = 1; i < 4; i++){
-        articleTags[i].className = "hidden";
-      }
-
-      powerMetalResults.className = "results hidden";
-
-      return false;
-    }
-
-    // showDeathMetal() definition -- TO BE PLACED AT BOTTOM
-    function showDeathMetal(){
-      // show the Power Metal form... finish this
-      articleTags[1].className = "active";
-      for (var i = 0; i < 3; i++){
-        if (i != 1){
-          articleTags[i].className = "hidden";
-        }
-        // else, do nothing
-      }
-      return false;
-    }
+    navBlackMetal.addEventListener("click", showBlackMetal, false);
+    navHardcore.addEventListener("click", showHardcore, false);
 
 
     // FORMS: Declare & initialize form name variables:
@@ -131,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
       // -- show results and hide form?
       powerMetalResults.className = "results active";
-      powerMetal.className = "hidden";
+      // powerMetal.className = "hidden";
 
       return false;
     }
@@ -177,6 +152,59 @@ document.addEventListener("DOMContentLoaded", function(event) {
       // -- assign the value of each field to innerHTML of each relevant span
       for (var i = 0; i < hardcoreFields.length; i++){
         hardcoreSpans[i].innerHTML = hardcoreFields[i].value;
+      }
+      return false;
+    }
+
+    // showPowerMetal() definition -- TO BE PLACED AT BOTTOM
+    function showPowerMetal(){
+      // show the Power Metal form
+      articleTags[0].className = "active";
+      powerMetal.className="active";
+      for (var i = 1; i < 4; i++){
+        articleTags[i].className = "hidden";
+      }
+
+      powerMetalResults.className = "results hidden";
+
+      return false;
+    }
+
+    // showDeathMetal() definition -- TO BE PLACED AT BOTTOM
+    function showDeathMetal(){
+      // show the Power Metal form... finish this
+      articleTags[1].className = "active";
+      for (var i = 0; i < 3; i++){
+        if (i != 1){
+          articleTags[i].className = "hidden";
+        }
+        // else, do nothing
+      }
+      return false;
+    }
+
+    // showBlackMetal() definition -- TO BE PLACED AT BOTTOM
+    function showBlackMetal(){
+      // show the Power Metal form... finish this
+      articleTags[2].className = "active";
+      for (var i = 0; i < 3; i++){
+        if (i != 2){
+          articleTags[i].className = "hidden";
+        }
+        // else, do nothing
+      }
+      return false;
+    }
+
+    // showHardcore() definition -- TO BE PLACED AT BOTTOM
+    function showHardcore(){
+      // show the Power Metal form... finish this
+      articleTags[3].className = "active";
+      for (var i = 0; i < 3; i++){
+        if (i != 3){
+          articleTags[i].className = "hidden";
+        }
+        // else, do nothing
       }
       return false;
     }

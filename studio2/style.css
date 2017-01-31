@@ -22,12 +22,19 @@
   display: block;
 }
 
+header h1 {
+  font-size: 38px;
+  text-transform: uppercase;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
 body > section{
   min-height: 500px;
   border: 1px solid #ccc;
 }
-
-
 
 label {
   display: inline-block;
