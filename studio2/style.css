@@ -31,6 +31,45 @@ a {
   display: block;
 }
 
+/* BUTTONS */
+.btn {
+  color: #fff;
+  width: 220px;
+  height: 60px;
+  border-radius: 10px;
+  border: transparent;
+  display: inline-block;
+  line-height: 60px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.power-metal {
+  background-color: #ff9800;
+}
+
+.death-metal {
+  background-color: #b71c1c;
+}
+
+.black-metal {
+  background-color: #212121;
+}
+
+.hardcore {
+  background-color: #333;
+}
+
+button {
+  width: 160px;
+  height: 40px;
+}
+
+button[type="reset"]{
+  width: 60px;
+}
+
 /* STRUCTURAL CSS */
 
 header, nav, section, footer {
@@ -49,7 +88,7 @@ header h1 {
 }
 
 nav {
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
 nav ul li {

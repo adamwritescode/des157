@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     // Now add toggle behavior to nav links... add the other 3
 
-    
+
     navPowerMetal.addEventListener("click", showPowerMetal, false);
     navDeathMetal.addEventListener("click", showDeathMetal, false);
     navBlackMetal.addEventListener("click", showBlackMetal, false);
@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       return false;
     }
 
-    // showDeathMetal() definition -- TO BE PLACED AT BOTTOM
+    // showDeathMetal() definition
     function showDeathMetal(){
       // show the Power Metal form... finish this
       articleTags[1].className = "active";
@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       return false;
     }
 
-    // showBlackMetal() definition -- TO BE PLACED AT BOTTOM
+    // showBlackMetal() definition
     function showBlackMetal(){
       // show the Power Metal form... finish this
       articleTags[2].className = "active";
@@ -224,7 +224,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       return false;
     }
 
-    // showHardcore() definition -- TO BE PLACED AT BOTTOM
+    // showHardcore() definition
     function showHardcore(){
       // show the Power Metal form... finish this
       articleTags[3].className = "active";
@@ -242,6 +242,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       return false;
     }
 
+    /* commenting out the below code, to investigate later
     // encapsulate 'show' functions into one higher-level function
     function showForm(){
       if (this.id == "navPowerMetal"){
@@ -285,6 +286,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       playSound();
       showForm();
     }
+    */
 
 
 });
