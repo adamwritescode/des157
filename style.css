@@ -91,8 +91,8 @@ nav li a:hover {
 
 footer {
     clear: both;
-    height: 60px;
-    background: #fff;
+    height: 100px;
+    background: #333;
     position: fixed;
     bottom: 0;
     right: 0;
@@ -100,10 +100,10 @@ footer {
 }
 
 #footer-inner {
-    background: #333;
+    background: #fff;
     text-align: left;
-    width: 100px;
-    height: 60px;
+    width: 280px;
+    height: 100px;
     padding: 0 0 0 10px;
     position: fixed;
     bottom: 0;
@@ -112,7 +112,10 @@ footer {
 
 #footer-inner ul li a {
     color: #fff;
-    font-variant: small-caps;
-    text-decoration: none;
-    text-transform: lowercase;
+    float: left;
+    margin-top: 20px;
+}
+
+img[alt="Say Hello!"]{
+  margin-right: 10px;
 }
