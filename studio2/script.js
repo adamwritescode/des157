@@ -30,11 +30,33 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var navHardcore = document.getElementById("navHardcore");
 
     // Now add toggle behavior to nav links... add the other 3
+
+    
     navPowerMetal.addEventListener("click", showPowerMetal, false);
     navDeathMetal.addEventListener("click", showDeathMetal, false);
     navBlackMetal.addEventListener("click", showBlackMetal, false);
     navHardcore.addEventListener("click", showHardcore, false);
 
+    /*
+    navPowerMetal.addEventListener("click", clickEvents, false);
+    navDeathMetal.addEventListener("click", clickEvents, false);
+    navBlackMetal.addEventListener("click", clickEvents, false);
+    navHardcore.addEventListener("click", clickEvents, false);
+    */
+
+
+    // Initialize array w/ sound src
+    var soundSrc = ["sound/powermetal.mp3", "sound/deathmetal.mp3",
+    "sound/blackmetal.mp3", "sound/hardcore.mp3"];
+
+    // create empty array to hold Audio objects
+    var sounds = [];
+
+    // preload Audio objects and add them to sounds array
+    for (var a = 0; a < soundSrc.length; a++){
+      sounds[a] = new Audio();
+      sounds[a].src = soundSrc[a];
+    }
 
     // FORMS: Declare & initialize form name variables:
     // -- Power Metal form
@@ -156,8 +178,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
       for (var i = 1; i < 4; i++){
         articleTags[i].className = "hidden";
       }
-
+      // hide results
       powerMetalResults.className = "results hidden";
+
+      //play sound
+      var soundPowerMetal = sounds[0];
+      soundPowerMetal.play();
 
       return false;
     }
@@ -172,6 +198,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
         // else, do nothing
       }
+
+      //play sound
+      var soundDeathMetal = sounds[1];
+      soundDeathMetal.play();
+
       return false;
     }
 
@@ -185,6 +216,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
         // else, do nothing
       }
+
+      //play sound
+      var soundBlackMetal = sounds[2];
+      soundBlackMetal.play();
+
       return false;
     }
 
@@ -198,7 +234,57 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
         // else, do nothing
       }
+
+      //play sound
+      var soundHardcore = sounds[3];
+      soundHardcore.play();
+
       return false;
     }
+
+    // encapsulate 'show' functions into one higher-level function
+    function showForm(){
+      if (this.id == "navPowerMetal"){
+        showPowerMetal();
+        console.log("this.id = " + this.id + " and this = " + this);
+      } else if (this.id == "navDeathMetal"){
+        showDeathMetal();
+        console.log("this.id = " + this.id + " and this = " + this);
+      } else if (this.id == "navBlackMetal"){
+        showBlackMetal();
+        console.log("this.id = " + this.id + " and this = " + this);
+      } else {
+        showHardcore();
+        console.log("this.id = " + this.id + " and this = " + this);
+      }
+    }
+
+    // Audio function definitions - play audio clip onclick (nav buttons)
+    function playSound(){
+      var soundPowerMetal = sounds[0];
+      var soundDeathMetal = sounds[1];
+      var soundBlackMetal = sounds[2];
+      var soundHardcore = sounds[3];
+
+      if (this.id == "navPowerMetal"){
+        soundPowerMetal.play();
+        console.log("this.id = " + this.id + " and this = " + this);
+      } else if (this.id == "navDeathMetal"){
+        soundDeathMetal.play();
+        console.log("this.id = " + this.id + " and this = " + this);
+      } else if (this.id == "navBlackMetal"){
+        soundBlackMetal.play();
+        console.log("this.id = " + this.id + " and this = " + this);
+      } else {
+        soundHardcore.play();
+        console.log("this.id = " + this.id + " and this = " + this);
+      }
+    }
+
+    function clickEvents(){
+      playSound();
+      showForm();
+    }
+
 
 });

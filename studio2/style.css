@@ -37,9 +37,14 @@ header, nav, section, footer {
   padding-left: 10px;
 }
 
+header {
+  background: #000;
+}
+
 header h1 {
   color: darkred;
-  font-size: 38px;
+  display: inline-block;
+  font-size: 68px;
   text-transform: uppercase;
 }
 
