@@ -1,0 +1,67 @@
+<!--NOTE: Replace all of the uppercase text from glenda with your own custom content-->
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>! ADD A DESCRIPTIVE TITLE HERE...DO NOT FORGET TO UPDATE THIS !</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px
+        }
+
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            color: white;
+            background-color: #333;
+            font-size: 11px;
+            margin: 24px;
+        }
+
+        h1 {
+            margin-bottom: 24px;
+        }
+
+        p {
+          text-align: center;
+        }
+
+        img {
+          position: absolute;
+          top: 100px;
+          left: 200px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Chapter 13 - The Cat's Hat</h1>
+    <h2>open the console to see the results of the script</h2>
+
+    <p>
+      <img src="img/cat.png" id="cat" alt="cat graphic" width="74" height="120">
+      <img src="img/hat.png" id="hat" alt="hat graphic" width="80" height="55">
+    </p>
+
+    <script>
+        // Description: A cat and a hat perpetually orbit around eachother
+        var cat = document.querySelector("#cat");
+        var hat = document.querySelector("#hat");
+
+        var angle = 0, lastTime = null;
+        function animate(time) {
+          if (lastTime != null)
+            angle += (time - lastTime) * 0.001;
+          lastTime = time;
+          cat.style.top = 200 + (Math.sin(angle) * 20) + "px";
+          cat.style.left = 300 + (Math.cos(angle) * 200) + "px";
+          // Extend script with hat image + 'opposite' orbit
+          hat.style.top = 200 + (Math.sin(angle) * -20) + "px";
+          hat.style.left = 300 + (Math.cos(angle) * -200) + "px";
+          requestAnimationFrame(animate);
+        }
+        requestAnimationFrame(animate);
+    </script>
+</body>
