@@ -15,6 +15,41 @@
         <main>
             <h2 class="sub-title">Recent posts</h2>
             <article class="post">
+              <header>
+                <p class="post-date">01/31/17</p>
+                <h2 class="post-title">Evaluating the UCD Degree Check Form</h2>
+              </header>
+              <div class="post-content">
+                <p>I will preface this post by saying that, while I don’t use this form often, I have used it often enough in the past few weeks to become completely frustrated.</p>
+
+                <p>It seems simple enough - all fields are labeled clearly and there’s no guesswork involved. Except with one field - and this is where the big problem lies.</p>
+
+                <p>The field labeled, “Please enter all the Majors you plan to declare, and the degree type (AB/BS) for each:” had me wondering how exactly I would need to input the major name AND the degree type. I assumed that it was probably a free text field, i.e. little to no input validation. I was very wrong!</p>
+                <aside>
+                    <figure>
+                        <img src="images/degree-form01.png" alt="screenshot of degree check form" width="532" height="435">
+                        <figcaption>UCD Degree Check Form</figcaption>
+                    </figure>
+                </aside>
+                <p>I tried "Design - AB". Then I tried "Design (AB)". Then I tried "Design, AB"; and so on, until I gave up. I kept receiving error messages throughout the week after multiple attempts.</p>
+
+                <p>Finally, by what I'm &lt;label&gt;ing (ha) a stroke of good luck, I was able to get through to a confirmation screen. The magic combination was:</p>
+
+                <p>Design
+                <br>AB</p>
+                <aside>
+                    <figure>
+                        <img src="images/degree-form02.png" alt="screenshot of confirmed submission of degree check form" width="483" height="158">
+                        <figcaption>UCD Degree Check Form</figcaption>
+                    </figure>
+                </aside>
+                <p>I have two main thoughts on this flaw: 1. If the powers that be wanted that specific format (free text field, with input separated on two lines) they should have stated so explicitly, while providing an example or two; 2. A “smarter” form could have solved the issue. “Smarter” meaning it includes some kind of logic which might hide or show dropdown menus with hard-coded values based on your student data (this would require being logged into the UCD system.)</p>
+
+                <p>In short: some simple adjustments could save users a ton of grief.</p>
+                <p>I wonder how many others have had this issue?</p>
+              </div>
+            </article>
+            <article class="post">
                 <header>
                     <p class="post-date">01/12/2017</p>
                     <h2 class="post-title">Brief commentary on Facebook's mobile UI (iOS)</h2>
