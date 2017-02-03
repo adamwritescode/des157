@@ -1,145 +1,165 @@
 /*%%%%%% Global CSS %%%%%*/
+
+
 /* basic reset */
+
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica', sans-serif;
 }
 
+
 /* everything else */
+
 body {
-    background-color: #fcfbf4;
-    border-top: 10px solid #333;
+  background-color: #fcfbf4;
+  border-top: 10px solid #333;
 }
 
 ul, ol {
-    list-style: none;
+  list-style: none;
 }
 
 #page-title {
-    background: #fcfbf4;
-    border-bottom: 2px solid #333;
-    height: 80px;
-    margin-bottom: 0;
-    padding-top: 10px;
+  background: #fcfbf4;
+  border-bottom: 2px solid #333;
+  height: 80px;
+  margin-bottom: 0;
+  padding-top: 10px;
 }
 
-    #page-title h1, #page-title h2 {
-        background: #fcfbf4;
-        color: #333;
-    }
+#page-title h1, #page-title h2 {
+  background: #fcfbf4;
+  color: #333;
+}
 
 #page-wrap {
-    margin: 0 auto;
-    padding: 0 20px 20px 20px;
-    width: 800px;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  width: 800px;
 }
 
+
 /*%%%%%% Main Content %%%%%*/
+
 main {
-    float: left;
-    margin-top: 160px;
+  float: left;
+  margin-top: 160px;
 }
 
 .sub-title {
-    text-align: right;
-    position: relative;
-    top: -110px;
+  text-align: right;
+  position: relative;
+  top: -110px;
 }
+
 
 /*%%%%%% Post: Header %%%%%*/
 
 .post header {
-    float: left;
-    width: 260px;
-    margin-right: 10px;
+  float: left;
+  width: 260px;
+  margin-right: 10px;
 }
 
 .post-date {
-    border-bottom: 2px solid #333;
-    font-size: 28px;
-    font-weight: bold;
-    transform: rotate(-45deg);
-    transform-origin: top left;
-    width: 180px;
+  border-bottom: 2px solid #333;
+  font-size: 28px;
+  font-weight: bold;
+  transform: rotate(-45deg);
+  transform-origin: top left;
+  width: 180px;
 }
 
 .post-title {
-    font-size: 18px;
-    text-transform: lowercase;
-    font-variant: small-caps;
-    border-bottom: 1px solid #333;
+  font-size: 18px;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  border-bottom: 1px solid #333;
 }
+
 
 /*%%%%%% Post: Content %%%%%*/
+
 .post-content {
-    float: left;
-    margin: 11px 0 0 0;
-    width: 530px;
+  float: left;
+  margin: 11px 0 0 0;
+  width: 530px;
 }
 
-    .post-content p {
-        font-size: 18px;
-        line-height: 24px;
-        margin-bottom: 18px;
-        text-align: left;
-    }
-        /* Drop-cap */
-        .post-content p:first-child:first-letter{
-            border-bottom: 1px solid #333;
-            border-right: 1px solid #333;
-            color: #96200c;
-            float: left;
-            font-size: 60px;
-            line-height: 60px;
-            margin: 0 6px 0 0;
-            padding: 0 10px 5px;
-        }
+.post-content p {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 18px;
+  text-align: left;
+}
 
-    .post-content p:last-child{
-        margin-bottom: 130px;
-    }
 
-    .post-content a {
-        color: #96200c;
-    }
+/* Drop-cap */
+
+.post-content p:first-child:first-letter {
+  border-bottom: 1px solid #333;
+  border-right: 1px solid #333;
+  color: #96200c;
+  float: left;
+  font-size: 60px;
+  line-height: 60px;
+  margin: 0 6px 0 0;
+  padding: 0 10px 5px;
+}
+
+.post-content p:last-child {
+  margin-bottom: 130px;
+}
+
+.post-content a {
+  color: #96200c;
+}
 
 aside, figure, figcaption {
-    display: inline-block;
-    text-align: center;
+  display: inline-block;
+  text-align: center;
 }
 
 figcaption {
-    font-size: 15px;
-    margin-bottom: 18px;
+  font-size: 15px;
+  margin-bottom: 18px;
 }
+
 
 /*%%%%%% Footer %%%%%*/
 
 footer {
-    clear: both;
-    height: 100px;
-    background: #fff;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 100%;
+  clear: both;
+  height: 100px;
+  background: #333;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
 }
 
 #footer-inner {
-    background: #333;
-    text-align: left;
-    width: 100px;
-    height: 90px;
-    padding: 5px 0 0 5px;
-    position: fixed;
-    bottom: 0;
-    right: 0;
+  background: #fff;
+  float: right;
+  text-align: left;
+  width: 280px;
+  height: 100px;
+  padding: 0 0 0 10px;
+  position: relative;
+  bottom: 0;
 }
 
 #footer-inner ul li a {
-    color: #fff;
-    font-variant: small-caps;
-    text-decoration: none;
-    text-transform: lowercase;
+  color: #fff;
+  font-variant: small-caps;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+#footer-inner ul li a {
+  color: #fff;
+  float: left;
+  margin-top: 20px;
 }
