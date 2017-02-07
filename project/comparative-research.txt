@@ -1,0 +1,20 @@
+1. Dr. Chloe (http://drchloe.com/anxietytools/)
+	- Informative, possibly preventative, not for “right now”/emergency state
+	- UI jumps around
+	- Extremely difficult to learn and focus during an anxiety/panic attack
+	- Assets: Website
+	- Lots of clicking involved
+	- Could incorporate information from this site into project; info is easy to understand and well-categorized (but no insomnia)
+	- Forms are a deterrent, esp. during a panic attack
+	- User flow is confusing & end doesn’t have resolve
+2. Sleep With Me Podcast/Website
+	- Blathering can actually cause anxiety (due to lack of feeling grounded)
+	- Monotone voice (+)
+	- Accessible thru website + podcast apps
+	- No visual component (as with all audio podcasts)
+	- Assets: Podcast, Website
+
+
+
+
+For the comparative research component of this project, I explored one website and one podcast that were related to my prospective final project idea: an online toolkit of visual and audible media designed to help alleviate anxiety as well as anxiety-related insomnia. The website that I explored was Dr. Chloe Carmichael’s Anxiety Management Toolbox, located at http://drchloe.com/anxiety-tools/. The main takeaway from this site was that it had a lot of information that could potentially help prevent anxiety or panic attacks, but did not appear to be very helpful during an anxiety or panic attack. 
