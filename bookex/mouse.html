@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 14 - Mouse Trail</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px
+        }
+
+        body {
+            font-family: Helvetica, Geneva, sans-serif;
+            color: white;
+            background-color: #333;
+            font-size: 11px;
+            margin: 24px;
+        }
+
+        h1 {
+            margin-bottom: 24px;
+        }
+
+        .trail1 { /* className for the trail elements */
+          position: absolute;
+          height: 12px;
+          width: 12px;
+          border-radius: 6px;
+          background: teal;
+        }
+
+        .trail2 { /* className for the trail elements */
+          position: absolute;
+          height: 12px;
+          width: 12px;
+          border-radius: 6px;
+          background: red;
+        }
+
+        .trail3 { /* className for the trail elements */
+          position: absolute;
+          height: 12px;
+          width: 12px;
+          border-radius: 6px;
+          background: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Chapter 14 - Mouse Trail Exercise</h1>
+    <script>
+        // ADD DESCRIPTIVE COMMENTS BEFORE STATEMENTS AND BLOCK OF CODE
+        addEventListener("mousemove", function(event) {
+        var trail = document.createElement("div");
+        var counter = 1;
+          trail.className = "trail" + counter;
+          trail.style.left = (event.pageX - 4) + "px";
+          trail.style.top = (event.pageY - 4) + "px";
+          document.body.appendChild(trail);
+          console.log(counter);
+        });
+    </script>
+</body>
