@@ -53,13 +53,19 @@
     <h1>Chapter 14 - Mouse Trail Exercise</h1>
     <script>
         // ADD DESCRIPTIVE COMMENTS BEFORE STATEMENTS AND BLOCK OF CODE
+        var counter = 1;
         addEventListener("mousemove", function(event) {
         var trail = document.createElement("div");
-        var counter = 1;
           trail.className = "trail" + counter;
           trail.style.left = (event.pageX - 4) + "px";
           trail.style.top = (event.pageY - 4) + "px";
           document.body.appendChild(trail);
+          // increment/decrement global counter somewhere around here
+          if (counter < 3){
+            counter += 1;
+          } else {
+            counter = 1;
+          }
           console.log(counter);
         });
     </script>
