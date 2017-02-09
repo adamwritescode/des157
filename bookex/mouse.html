@@ -52,21 +52,25 @@
 <body>
     <h1>Chapter 14 - Mouse Trail Exercise</h1>
     <script>
-        // ADD DESCRIPTIVE COMMENTS BEFORE STATEMENTS AND BLOCK OF CODE
+        // The following script creates a trail of circular divs that follow the mouse cursor.
+        // The divs change color via cycling through 3 css classes every time the mouse is moved.
+        
+        // initialize counter var to manage trail classes
         var counter = 1;
         addEventListener("mousemove", function(event) {
-        var trail = document.createElement("div");
-          trail.className = "trail" + counter;
+          // create the trail div (but don't put it anywhere yet)
+          var trail = document.createElement("div");
+          trail.className = "trail" + counter; // e.g. trail1
+          // position near mouse tip
           trail.style.left = (event.pageX - 4) + "px";
           trail.style.top = (event.pageY - 4) + "px";
           document.body.appendChild(trail);
-          // increment/decrement global counter somewhere around here
+          // increment/decrement global counter
           if (counter < 3){
-            counter += 1;
+            counter += 1; // add 1 to counter to next event triggers a new div class (e.g. trail2)
           } else {
-            counter = 1;
+            counter = 1; // reset to starting value if over 3 (since there are only 3 classes to cycle through)
           }
-          console.log(counter);
         });
     </script>
 </body>
