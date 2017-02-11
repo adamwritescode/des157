@@ -8,3 +8,87 @@
     margin: 0px;
     padding: 0px
 }
+
+body {
+  background: darkgray;
+  font-family: Helvetica, sans-serif;
+}
+
+main {
+  width: 1280px;
+  margin: -280px auto 0 auto;
+}
+
+main img {
+  border: 1px solid #aaa;
+  /* filter: blur(3px); */
+  z-index: 1;
+  border-radius: 4px;
+}
+
+/* drone + remote controller image */
+main img:nth-of-type(1) {
+  position: relative;
+  top: 264px;
+  left: 112px;
+}
+
+/* record image */
+main img:nth-of-type(2) {
+  position: relative;
+  top: 571px;
+  left: 122px;
+}
+
+/* turntable image */
+main img:nth-of-type(3) {
+  position: relative;
+  top: 551px;
+  left: -120px;
+}
+
+/* cinema display image */
+main img:nth-of-type(4) {
+  position: relative;
+  top: 487px;
+  left: -106px;
+}
+
+/* keyboard image */
+main img:nth-of-type(5) {
+  position: relative;
+  top: 509px;
+  left: 643px;
+}
+
+/* "background" image */
+main img:last-of-type {
+  border-radius: 0;
+  filter: blur(0px);
+  z-index: 0;
+}
+
+.hover {
+  border: 1px solid rgba(255,255,255,0);
+}
+
+/* modal window */
+.modal {
+  background: #666;
+  display: none;
+  margin: auto;
+  position: absolute;
+  top: 123px;
+  left: 0;
+  right: 0;
+  width: 1280px;
+  height: 800px;
+  z-index: 1;
+}
+
+/* modal close button */
+.close {
+  font-size: 13px;
+  height: 80px;
+  width: 80px;
+}

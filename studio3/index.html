@@ -9,30 +9,46 @@
 </head>
 
 <body>
+  <header>
+    <h1>What the heck is on Adam's desk?</h1>
+  </header>
   <main>
-    <img src="img/1280-800-test.JPG" alt="desk" width="1280" height="800">
-    <aside class="modal" id="drone">
-      <!-- drone stuff here -->
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </aside>
-    <aside class="modal" id="record">
-      <!-- Intronaut stuff here -->
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </aside>
-    <aside class="modal" id="keyboard">
-      <!-- keyboard stuff here -->
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </aside>
-
+    <img src="img/drone-default.jpg" width="159" height="71" alt="Axis Vidius mini drone" id="drone">
+    <img src="img/record-default.jpg" width="273" height="19" alt="What record is this? Intronaut - The Direction of Last Things" id="record">
+    <img src="img/turntable-default.jpg" width="251" height="142" alt="Jensen JTA230 Turntable" id="turntable">
+    <img src="img/display-default.jpg" width="458" height="299" alt="Apple Cinema Display." id="display">
+    <img src="img/keyboard-default.jpg" width="369" height="54" alt="Razer BlackWidow Ulitmate keyboard" id="keyboard">
+    <!-- desk "background" image -->
+    <img src="img/desk.JPG" width="1280" height="800" alt="my desk">
   </main>
+
+  <!-- modal windows are below -->
+  <aside class="modal" id="modal-drone">
+    <!-- drone stuff here -->
+    <p>Drone content</p>
+    <p class="close">close window</p>
+  </aside>
+  <aside class="modal" id="modal-record">
+    <!-- Intronaut stuff here -->
+    <p>Record content</p>
+    <p class="close">close window</p>
+  </aside>
+  <aside class="modal" id="modal-keyboard">
+    <!-- keyboard stuff here -->
+    <p>Keyboard content</p>
+    <p class="close">close window</p>
+  </aside>
+  <!-- end of modal windows -->
+
   <footer>
-    <!-- validation links -->
+      <div id="footer-inner">
+          <ul>
+            <li><a href="mailto:arrosado@ucdavis.edu"><img src="../img/mail-icon.png" height="64" width="64" alt="Say Hello!"></a></li>
+            <li><a href="https://github.com/adamwritescode" target="_blank"><img src="../img/GitHub-Mark-64px.png" width="64" height="64" alt="GitHub Logo - view my GitHub page"></a></li>
+            <li><a href="https://validator.w3.org/check?uri=referer" target="_blank"><img src="../img/HTML5_Logo_64.png" height="64" width="64" alt="Valid HTML 5"></a></li>
+            <li><a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank"><img src="../img/CSS3_logo_and_wordmark.png" height="64" width="64" alt="Valid CSS"></a></li>
+          </ul>
+      </div>
   </footer>
 </body>
 </html>
