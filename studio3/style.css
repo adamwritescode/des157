@@ -29,7 +29,7 @@ main img {
 /* drone + remote controller image */
 main img:nth-of-type(1) {
   position: relative;
-  top: 264px;
+  top: 268px;
   left: 112px;
 }
 
@@ -72,7 +72,7 @@ main img:last-of-type {
   border: 1px solid rgba(255,255,255,0);
 }
 
-/* modal window */
+/* modal window - generic */
 .modal {
   background: #666;
   display: none;
@@ -88,7 +88,29 @@ main img:last-of-type {
 
 /* modal close button */
 .close {
+  background: #eee;
+  border-radius: 4px;
   font-size: 13px;
-  height: 80px;
+  line-height: 30px;
+  padding: 0 10px;
+  position: relative;
+  top: -10px;
+  left: 1174px;
+  height: 30px;
   width: 80px;
+}
+
+/* modal - drone */
+#modal-drone {
+  background: url(img/drone-bg.jpg);
+}
+
+/* modal - record */
+#modal-record {
+  background: url(img/record-bg.jpg);
+}
+
+/* modal - keyboard */
+#modal-keyboard {
+  background: url(img/keyboard-bg.jpg);
 }

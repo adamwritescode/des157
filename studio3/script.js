@@ -55,12 +55,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // called on image hotspot mouseover
     function hoverOn(){
       this.src = "img/" + this.id + "-hover.jpg";
-      this.class = "hover";
+      this.className = "hover";
     }
     // called on image hotspot mouseout
     function hoverOff(){
       this.src = "img/" + this.id + "-default.jpg";
-      this.class = "";
+      this.className = "";
     }
 
     // called on image hotspot click
