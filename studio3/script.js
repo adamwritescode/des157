@@ -72,8 +72,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
         // show modal
         thisModal.style.display = "block";
         // add event handler to close button
-        thisModal.childNodes[5].addEventListener("click",function(){thisModal.style.display = "none";});
-        console.log(thisModal.childNodes[5]);
+        var closeBtn = thisModal.childNodes[1].childNodes[5];
+        closeBtn.addEventListener("click",function(){thisModal.style.display = "none";});
+        // console.log(thisModal.childNodes[1] + " AND " + thisModal.childNodes[1].childNodes[5]);
       }
     }
 

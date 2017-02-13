@@ -14,9 +14,14 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
+header {
+  width: 1280px;
+  margin: 30px auto 0;
+}
+
 main {
   width: 1280px;
-  margin: -280px auto 0 auto;
+  margin: -330px auto 0;
 }
 
 main img {
@@ -78,7 +83,7 @@ main img:last-of-type {
   display: none;
   margin: auto;
   position: absolute;
-  top: 123px;
+  top: 103px;
   left: 0;
   right: 0;
   width: 1280px;
@@ -86,18 +91,35 @@ main img:last-of-type {
   z-index: 1;
 }
 
+.modal section {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 10px 0 0 10px;
+  position: relative;
+  top: 220px;
+  left: 330px;
+  height: 400px;
+  width: 600px;
+}
+
+.modal section h2 {
+  margin-bottom: 7px;
+}
+
+.modal section p {
+  line-height: 22px;
+}
+
 /* modal close button */
 .close {
   background: #eee;
-  border-radius: 4px;
-  font-size: 13px;
-  line-height: 30px;
-  padding: 0 10px;
   position: relative;
-  top: -10px;
-  left: 1174px;
-  height: 30px;
-  width: 80px;
+  top: 150px;
+  border-radius: 6px;
+  font-size: 13px;
+  padding: 0 10px;
+  height: 40px;
+  width: 112px;
+  left: 235px;
 }
 
 /* modal - drone */
@@ -113,4 +135,38 @@ main img:last-of-type {
 /* modal - keyboard */
 #modal-keyboard {
   background: url(img/keyboard-bg.jpg);
+}
+
+/* footer */
+footer {
+  clear: both;
+  height: 100px;
+  background: #333;
+  width: 100%;
+}
+
+#footer-inner {
+  background: #fff;
+  float: right;
+  text-align: left;
+  width: 280px;
+  height: 100px;
+  padding: 0 0 0 10px;
+  position: relative;
+  bottom: 0;
+  right: 0;
+}
+
+#footer-inner ul {
+  list-style: none;
+}
+
+#footer-inner ul li a {
+  color: #fff;
+  float: left;
+  margin-top: 20px;
+}
+
+img[alt="Say Hello!"] {
+  margin-right: 10px;
 }
