@@ -139,29 +139,22 @@ main img:last-of-type {
 
 /* footer */
 footer {
-  clear: both;
-  height: 100px;
-  background: #333;
-  width: 100%;
-}
-
-#footer-inner {
   background: #fff;
   float: right;
   text-align: left;
   width: 280px;
   height: 100px;
   padding: 0 0 0 10px;
-  position: relative;
+  position: absolute;;
   bottom: 0;
-  right: 0;
+  left: 40%; /* it'll do for now... */
 }
 
-#footer-inner ul {
+footer ul {
   list-style: none;
 }
 
-#footer-inner ul li a {
+footer ul li a {
   color: #fff;
   float: left;
   margin-top: 20px;
