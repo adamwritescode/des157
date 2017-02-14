@@ -10,21 +10,45 @@
     font-family: 'Helvetica', sans-serif;
 }
 
+header {
+  background: rgba(255,255,255,0);
+}
+
 header * {
   font-size: 18px;
 }
 
 section {
-  height: 100vh;
+  height: 95vh;
 }
 
 section h1 {
   font-size: 15vh;
 }
 
+
+/* individual sections */
+#time-money {
+  background: #85BB65;
+}
+
 footer {
-  height: 10vh;
+  background: #1c1e1e;
+  height: 5vh;
   position: fixed;
   bottom: 0;
   right: 0;
+  text-align: right;
+  width: 100%;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+footer a:last-child {
+  margin: 0 10px;
 }
