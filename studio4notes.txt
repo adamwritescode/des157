@@ -1,0 +1,25 @@
+Lab 4 - Time is on my side
+
+- There aren’t enough hours in the day
+- So much to do, so little time 
+- So little time, so much to do
+- Randomized time quote display? (Full screen)
+Components:
+	- New quote button (clock?)
+	- Audio and/or video (?)
+	- Timed interaction/timer
+
+- Use js to define behavior. Code events such as mouseover, mouseout 
+and click to change css (including animations, transitions and transforms)
+Include at least three timers using setTimeout() that show "tooltips" delayed feedback
+on mouseover an interactive element without clicking by setting timers
+Creatively include at least one time-based element from the following list:
+setInterval() , requestAnimationFrame(), Date(), <audio> or <video>
+Add a <footer> that includes an html validation link and a css validation link:
+
+Quotes:
+	- Time is money. (BENJAMIN FRANKLIN, Advice to Young Tradesmen)
+	- The strongest of all warriors are these two -- Time and Patience (LEO TOLSTOY, War and Peace)
+	- Time brings all things to pass. (AESCHYLUS, The Libation Bearers)
+	- Lost time is never found again. (BENJAMIN FRANKLIN, Poor Richard's Almanack)
+	- We on Earth have just awakened to the great oceans of space and time from which we have emerged. - Carl Sagan (Cosmos: A Personal Voyage)
