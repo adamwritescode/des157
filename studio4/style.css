@@ -12,25 +12,84 @@
 
 header {
   background: rgba(255,255,255,0);
+  position: fixed;
+  bottom: 5vh;
+  right: 10px;
 }
 
 header * {
-  font-size: 18px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: normal;
 }
 
 section {
+  display: table;
   height: 95vh;
+  width: 100%;
+}
+
+section div {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 10px 30px;
 }
 
 section h1 {
-  font-size: 15vh;
+  text-transform: uppercase;
 }
 
+section h2 {
+  font-weight: normal;
+  text-transform: uppercase;
+}
 
 /* individual sections */
 #time-money {
-  background: #85BB65;
+  text-align: right;
+  background: #3b9057;
+  color: #fff;
 }
+
+#time-money h1 {
+    font-size: 20vh;
+}
+
+#time-money span {
+  color: #000;
+
+}
+
+#time-patience {
+  text-align: left;
+  background: #7f8c8d;
+  color: #fff;
+}
+
+#time-patience h1 {
+    font-size: 13vh;
+}
+
+#time-patience span {
+  color: #000;
+
+}
+
+#time-brings {
+  text-align: left;
+  background: #fff;
+  color: #000;
+}
+
+#time-brings h1 {
+    font-size: 13vh;
+}
+
+#time-brings span {
+  color: #333;
+
+}
+
 
 footer {
   background: #1c1e1e;
@@ -38,6 +97,7 @@ footer {
   position: fixed;
   bottom: 0;
   right: 0;
+  line-height: 5vh;
   text-align: right;
   width: 100%;
 }
