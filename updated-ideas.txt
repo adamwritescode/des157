@@ -1,0 +1,16 @@
+New/updated project ideas:
+
+Anxiety Toolkit
+	- Visualizer/visual breathing aids
+		- time-based
+		- simple color scheme
+		- fullscreen
+		- customizable
+		- audio/white noise? simple scales?
+		- clickable toy/knobs/sliders?
+	- Zen Garden?
+		- Sand/rock garden (interactive or auto)
+			- a few different rakes (width/# of prongs)
+		- Koi pond (not photorealistic - abstracted)
+			- click to scatter
+		- Bonsai trees?
