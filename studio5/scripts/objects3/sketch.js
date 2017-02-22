@@ -2,7 +2,7 @@ var sandBox = [];
 var bg;
 function setup() {
   createCanvas(600, 250);
-  bg = loadImage("../../img/zengarden-bg.png"); // load bg image
+  bg = loadImage("img/zengarden-bg.png"); // load bg image
   for(var i = 0; i < ((width * height))/16; i++){
     sandBox.push(new Sand(int(random(0,width)), int(random(0, height)), 2));
   }
