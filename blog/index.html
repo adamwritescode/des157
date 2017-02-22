@@ -14,6 +14,43 @@
     <!-- main section -->
         <main>
             <h2 class="sub-title">Recent posts</h2>
+
+            <article class="post">
+              <header>
+                <p class="post-date">02/21/17</p>
+                <h2 class="post-title">Using p5.js to Create a Zen Sand Garden</h2>
+              </header>
+              <div class="post-content">
+                <p>The 5th studio assignment was to explore a JavaScript library and to create a demo showcasing some of its functionality. The goal was to get familiar with said library so that it may be used to build components of the upcoming final project. I intent to build a stress-relieving virtual outdoor Zen garden for my final project, and I decided that the sand area of the outdoor garden would be a good component to focus on for this assignment. </p>
+
+                <p>I knew what kind of functionality I’d need for the sand garden: ability to render shapes/particles (a LOT of them), mouse collision detection (between the mouse cursor and the particles), mouse “drawing” (to push the particles and leave an imprint), and image importing/displaying (to potentially add a background image or swap the mouse cursor with an image of a rake or other tool), and &lt;canvas&gt; support. </p>
+
+                <p>I also knew that I’d likely need to stay in a 2D environment; though 3D libraries and WebGL definitely pique my interest, I needed to be realistic as far as what could be accomplished in a few days (which were already split between other classes.) </p>
+
+                <p>After sifting through pages of JS libraries, I only a few options to choose from that, I thought, could’ve potentially suited the needs of my project: two.js, particles.js and p5.js.</p>
+
+                <p>I evaluated particles.js first; and while the demo page looked impressive and highly customizable, I noticed that performance greatly decreased as the particle count (and other attributes) were modified. As I adjusted the particle count, Chrome crashed before a satisfactory number of particles were rendered; thus, that library was out. </p>
+
+                <p>Next up was p5js. I was already fairly comfortable with Processing, so I decided to dive in and attempt to code a quick prototype/proof of concept. “Quick” turned out to equate to several hours and multiple do-overs. What I wanted to do seemed simple: fill the canvas with pixels and then have each pixel move when the mouse was within a certain distance; however, it proved to be far more challenging than I had anticipated. I successfully rendered a canvas full of points of randomized greyscale values and had their x and y values stored in a 2D array, but I couldn’t modify their locations even when changing the coordinates in the array. I spent hours trying to accomplish this in various ways, but nothing worked. I put p5js on hold for the time being.</p>
+
+                <p>Last was two.js, which seemed especially appealing given that its documentation page boasted something about having all two.js shapes stored and easily accessible/modifiable. I was almost certain this would be the winner, but after doing some more research, I realized that a lot of the interactivity I needed was not natively supported, and thus would be difficult to implement. </p>
+
+                <p>Back to p5js. After posting on the class discussion page, our professor suggested I create objects instead of primitive shapes. Lightbulb moment. After a few more attempts (and several more hours trying to debug what ended up being a painfully simple error) I finally had the very basic functionality I needed - the mouse cursor could move sand particles around the canvas. Unfortunately, there are some performance (low FPS) issues, so I’m going to look more closely into the concept of “particle systems” per our TA’s suggestion, as well as code optimization. </p>
+
+                <p>I think that p5js gives you a lot of bang for your buck. It is very versatile, easy to use, and you can build surprisingly impressive projects without being a coding guru. Most of my complaints have to do with the documentation and community (or lack there of). The documentation pages are vague at times, some advanced examples don’t include many comments, and google searches on specific problems don’t prove very fruitful. The forums are fairly inactive, and the p5js subreddit is a ghost town. If there were a more active community (or had posted in the class discussions earlier), I probably wouldn’t have had very many pain points. Either way, this was a great learning experience, and my programming skills have definitely improved. </p>
+
+                <aside>
+                    <figure>
+                        <img src="images/zen-garden-screenshot.jpg" alt="screenshot of completed studio 5 zen sand garden" width="500" height="221">
+                        <figcaption>Studio 5 in its finished state</figcaption>
+                    </figure>
+                </aside>
+
+                <p><a href="https://p5js.org">Check out p5js!</a></p>
+
+              </div>
+            </article>
+
             <article class="post">
               <header>
                 <p class="post-date">01/31/17</p>
