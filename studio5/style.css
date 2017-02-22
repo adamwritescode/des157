@@ -1,0 +1,94 @@
+/* reset & global stuff */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Garamond', serif;
+  background: url('img/seigaiha.png');
+}
+canvas {vertical-align: top;}
+
+header {
+  margin: 0 auto;
+  text-align: center;
+  width: 900px;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+header h2 {
+  font-size: 16px;
+}
+
+nav {
+  background: #a91e23;
+  display: inline;
+  width: 280px;
+}
+
+footer nav a {
+  color: #efefef;
+}
+
+#canvas {
+  background: url('img/zengarden-bg2.jpg');
+  height: 300px;
+  margin: 0 auto;
+  width: 900px;
+}
+
+#canvas canvas {
+  position: relative;
+  top: 55px;
+  left: 55px;
+}
+
+#credits {
+  background: #eee;
+  border: 4px solid #222;
+  display: none;
+  padding: 10px;
+  position: absolute;
+  bottom: 25%;
+  left: calc(50% - 204px);
+  width: 400px;
+  height: 200px;
+
+}
+
+#credits p {
+  margin-bottom: 10px;
+}
+
+#credits p:last-child {
+  display: inline-block;
+  position: relative;
+  top: 100px;
+  left: 300px;
+}
+
+#credits p a {
+  color: #222;
+}
+
+footer {
+  background: #efefef;
+  margin: 0 auto;
+  text-align: center;
+  width: 900px;
+}
+
+footer a {
+  color: #222;
+  font-size: 13px;
+  padding: 5px;
+}
+
+footer a:last-child {
+  padding-left: 0;
+}
