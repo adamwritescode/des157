@@ -5,10 +5,21 @@
 }
 
 header {
+  padding-top: 10vh;
   background: url('img/bg-main.jpg');
   height: 100vh;
   background-size: cover;
 }
+
+header h1 img {
+  max-width: 50%;
+
+}
+
+header * {
+  text-align: center;
+}
+
 #main {
   /* background: url('img/nav.jpg');*/
   height: 100vh;
