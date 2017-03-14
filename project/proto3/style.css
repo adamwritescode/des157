@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica', sans-serif;
+}
+
+header {
+  background: url('img/bg-main.jpg');
+  height: 100vh;
+  background-size: cover;
+}
+#main {
+  /* background: url('img/nav.jpg');*/
+  height: 100vh;
+  background-size: cover;
+}
+
+#main nav div {
+  float: left;
+}
+
+#main nav div:hover {
+  background-color: #ccc;
+  background-blend-mode: overlay;
+}
+
+#main nav div a {
+  display: block;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+}
+
+#sand {
+  background: url('img/nav01.jpg');
+  height: 100vh;
+  background-size: cover;
+  width: 35%;
+}
+#koi {
+  background: url('img/nav02.jpg');
+  height: 100vh;
+  background-size: cover;
+  width: 30%;
+}
+#bonsai {
+  background: url('img/nav03.jpg');
+  height: 100vh;
+  background-size: cover;
+  width: 35%;
+}
