@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #2f2f2f;
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-weight: 300;
+}
+
+h1,h2,h3,h4,h5,h6/*, .subhead*/ {
+  font-family: 'Reenie Beanie', cursive;
+  font-weight: bold;
+}
+
+
+header {
+  padding-top: 10vh;
+  /* background: url('img/bg-main.jpg'); */
+  height: 100vh;
+  background-size: cover;
+  background-color: rgb(229,249,255);
+  background-blend-mode: overlay;
+}
+
+    header h1 {
+      font-size: 15vw;
+    }
+
+    header h1 img {
+      max-width: 50%;
+
+    }
+
+    header * {
+      text-align: center;
+    }
+
+     .subhead {
+      font-size: calc(6px + 1vw);
+      letter-spacing: 2px;
+      margin: 100px 0 10px 0;
+    }
+
+    header .cta {
+      display: block;
+      min-width: 150px;
+      width: 10vw;
+      margin: 0 auto;
+
+    }
+
+#main {
+  /* background: url('img/nav.jpg');*/
+  height: 100vh;
+  background-size: cover;
+}
+
+#main nav div {
+  float: left;
+}
+
+#main nav div:hover {
+  background-color: #ccc;
+  background-blend-mode: overlay;
+}
+
+#main nav div h2 {
+  color: #2c2c2c;
+  font-size: 4vw;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0px 0px 6px #fff;
+  position: relative;
+  top: 40%;
+}
+
+#main nav div a {
+  display: block;
+  height: 95vh;
+  width: 100%;
+  opacity: 0;
+}
+
+#sand {
+  background: url('img/nav01.jpg');
+  height: 100vh;
+  background-size: cover;
+  width: 35%;
+}
+#koi {
+  background: url('img/nav02.jpg');
+  height: 100vh;
+  background-size: cover;
+  width: 30%;
+}
+#bonsai {
+  background: url('img/nav03.jpg');
+  height: 100vh;
+  background-size: cover;
+  width: 35%;
+}
