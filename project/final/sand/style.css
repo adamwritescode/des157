@@ -36,10 +36,11 @@ footer nav a {
 }
 
 #canvas {
-  background: url('img/zengarden-bg2.jpg');
-  height: 300px;
+  background: url('../../final/img/wood.jpg');
+  box-shadow: inset -9px 1px 26px 6px rgba(0,0,0,0.75);
+  height: 750px;
   margin: 0 auto;
-  width: 900px;
+  width: 1070px;
 }
 
 #canvas canvas {

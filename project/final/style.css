@@ -22,14 +22,22 @@ header {
 }
 
     header h1 {
+      border: 10px solid #2f2f2f;
+      border-radius: 3px;
       font-size: 15vw;
+      height: 50vh;
+      line-height: 50vh;
+      width: 75vw;
+      margin: 0 auto;
+      padding: 40px 0;
     }
 
+    /* cmt out because not currently using image for logo, but might revert.
     header h1 img {
       max-width: 50%;
 
     }
-
+    */
     header * {
       text-align: center;
     }
@@ -37,16 +45,30 @@ header {
      .subhead {
       font-size: calc(6px + 1vw);
       letter-spacing: 2px;
-      margin: 100px 0 10px 0;
+      margin: 40px 0 40px 0;
     }
 
     header .cta {
+      background-color: #2f2f2f;
+      border-radius: 3px;
       display: block;
       min-width: 150px;
+      height: 60px;
       width: 10vw;
       margin: 0 auto;
-
     }
+
+      .cta a {
+        color: rgb(229,249,255);
+        display: block;
+        letter-spacing: 1.5px;
+        line-height: 60px;
+        text-decoration: none;
+      }
+
+      .cta:hover {
+        background-color: rgba(255,255,255,0.10);
+      }
 
 #main {
   /* background: url('img/nav.jpg');*/
@@ -86,6 +108,12 @@ header {
   background-size: cover;
   width: 35%;
 }
+
+  #sand-frame iframe {
+    width: 100%;
+    height: 100vh;
+  }
+
 #koi {
   background: url('img/nav02.jpg');
   height: 100vh;

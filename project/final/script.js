@@ -4,7 +4,7 @@ var sandBox = [];
 // var bg;
 
 function setup() {
-  var theCanvas = createCanvas(795, 195);
+  var theCanvas = createCanvas(960, 640);
   theCanvas.parent('canvas');
   // bg = loadImage("img/zengarden-bg.png"); // load bg image
   for(var i = 0; i < ((width * height))/16; i++){
