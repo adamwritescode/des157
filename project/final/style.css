@@ -13,9 +13,9 @@ h1,h2,h3,h4,h5,h6/*, .subhead*/ {
 
 
 header {
-  padding-top: 10vh;
+  padding: 10vh 0 5vh 0;
   /* background: url('img/bg-main.jpg'); */
-  height: 100vh;
+  height: 85vh;
   background-size: cover;
   background-color: rgb(229,249,255);
   background-blend-mode: overlay;
@@ -29,7 +29,7 @@ header {
       line-height: 50vh;
       width: 75vw;
       margin: 0 auto;
-      padding: 40px 0;
+      padding: 2.5vh 0;
     }
 
     /* cmt out because not currently using image for logo, but might revert.

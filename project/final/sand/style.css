@@ -44,9 +44,9 @@ footer nav a {
 #canvas {
   background: url('../../final/img/wood.jpg');
   box-shadow: inset -9px 1px 26px 6px rgba(0,0,0,0.75);
-  height: 750px;
+  height: 500px;
   margin: 0 auto;
-  width: 1070px;
+  width: 800px;
 }
 
 #canvas canvas {
