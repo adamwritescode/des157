@@ -5,8 +5,14 @@
   padding: 0;
 }
 
+h1,h2,h3,h4,h5,h6/*, .subhead*/ {
+  font-family: 'Reenie Beanie', cursive;
+  font-weight: bold;
+}
+
+
 body {
-  font-family: 'Garamond', serif;
+  font-family: 'Roboto', 'Garamond', serif;
   background: url('img/seigaiha.png');
 }
 canvas {vertical-align: top;}
@@ -18,11 +24,11 @@ header {
 }
 
 header h1 {
-  font-size: 36px;
+  font-size: 42px;
 }
 
-header h2 {
-  font-size: 16px;
+header p {
+  font-size: 12px;
 }
 
 nav {
